@@ -1,0 +1,120 @@
+:root {
+    --light: #ffffff;
+    
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    font-weight: 100;
+    background: #f0f0f0;
+    
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.bg-primary { background-color: #fff!important; }
+
+.bg-light { background-color: var(--light) !important; }
+
+.bg-grey { background-color: var(--grey) !important; }
+
+.bg-mix { background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0); }
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+  
+#sidebar-container .logo{
+    padding: 5px;
+}
+  
+#sidebar-container .menu {
+    max-width: 190px;
+}
+
+#sidebar-container .menu a {
+  padding: 5px;
+  display: block;
+  height: 60px;
+  position: relative;
+  margin-bottom: 1px;
+  color: #A29F9F;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#sidebar-container .menu a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #1fafec;
+  display: none;
+}
+
+#sidebar-container .menu a:hover,
+#sidebar-container .menu a.active{
+    background: #D1D4E1;
+    color: #fff;
+  }
+
+#sidebar-container .menu a:hover:before,
+#sidebar-container .menu a.active:before{
+    display: block;
+  }
+
+
+#content {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.avatar {
+    max-width: 35px;
+}
+
+.avatar2 {
+    max-width: 150px;
+}
+
+
+
+
+  
+@media (max-width: 800px) {
+    #sidebar-container {
+      display: none;
+    }
+    .stat {
+        border: 0;
+    }
+  }
+  
+ #chart {
+    height: 440px;
+}
+
+.navbar-color{
+  background: #366B91;
+  color: #fff;
+}
+
+.letra-color{
+  color: #fff;
+}
