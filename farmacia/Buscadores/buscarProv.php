@@ -10,7 +10,7 @@ $query= "SELECT * FROM proveedores WHERE vista='$Vista' ORDER BY cod_prov";
 if (isset($_POST['Consultar']))
  {
 	$q=$conexion->real_escape_string($_POST['Consultar']);
-	$query="SELECT * FROM proveedores WHERE   cod_prov LIKE '%".$q."%' OR nombre_prov LIKE '%".$q."%' OR telefono_prov LIKE '%".$q."%' OR cuenta_prov LIKE '%".$q."%' OR date_prov LIKE '%".$q."%'"; 
+	$query="SELECT * FROM proveedores WHERE vista = 1 AND (cod_prov LIKE '%{$q}%' OR nombre_prov LIKE '%{$q}%' OR telefono_prov LIKE '%{$q}%' OR cuenta_prov LIKE '%{$q}%' OR date_prov LIKE '%{$q}%')"; 
 }
 
 $BuscarProveedores=$conexion->query($query);
